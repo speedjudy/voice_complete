@@ -1,0 +1,158 @@
+.boxMic {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999999999999;
+}
+.objectMic {
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.outlineMic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 8px solid #1e2d70;
+    /* animation: pulseMic 3s; */
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.buttonMic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #2F91A7;
+    box-shadow: 0px 0px 80px #ffffff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 22222;
+}
+
+@keyframes pulseMic {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        border: 65px solid #0B3082;
+    }
+    50% {
+        border: solid #A3FFC2;
+        opacity: 0.8;
+    }
+
+    90% {
+        transform: scale(3.2);
+        opacity: 0.2;
+        border: 3px solid #2E3CFF;
+    }
+    100% {
+        transform: scale(3.3);
+        opacity: 0;
+        border: 1px solid #7A89FF;
+    }
+}
+
+#delayedMic {
+    animation-delay: 1.5s;
+}
+
+#circleinMic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f6f8f9;
+    box-shadow: 0px -2px 15px #2f91a7;
+    position: absolute;
+}
+
+.mic-iconMic {
+    height: 60px;
+    /* position: absolute; */
+    margin: 21px;
+}
+.textDivMic {
+    position: fixed;
+    left: 10px;
+    bottom: 5px;
+    z-index: 99999999;
+}
+#textResultUjjal {
+    background-color: rgba(246, 246, 246, 1);
+    opacity: 1;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Inconsolata, ui-sans-serif;
+    color: #1a1c21;
+}
+.pids-wrapper {
+    /* width: 500px;
+    position: fixed;
+    top: 57%;
+    left: 38%; */
+    z-index: 9999999999999;
+    display: none;
+}
+.pid{
+    width: calc(10% - 5px);
+    height: 10px;
+    /* display: inline-block; */
+    margin: 5px;
+}
+
+.pids-wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+    margin: 5em auto 0;
+    /* border: solid 5px tomato; */
+}
+.pids-wrapper > * {
+    display: block;
+    position: absolute;
+    top: 33%;
+    left: 45%;
+    /* margin: -3em;
+    width: 6em;
+    height: 6em; */
+}
+
+.pids-wrapper > *:nth-of-type(1) {
+    transform: rotate(0deg) translate(10em) rotate(0deg);
+}
+
+.pids-wrapper > *:nth-of-type(2) {
+    transform: rotate(45deg) translate(10em) rotate(-45deg);
+}
+
+.pids-wrapper > *:nth-of-type(3) {
+    transform: rotate(90deg) translate(10em) rotate(-90deg);
+}
+
+.pids-wrapper > *:nth-of-type(4) {
+    transform: rotate(135deg) translate(10em) rotate(-135deg);
+}
+
+.pids-wrapper > *:nth-of-type(5) {
+    transform: rotate(180deg) translate(10em) rotate(-180deg);
+}
+
+.pids-wrapper > *:nth-of-type(6) {
+    transform: rotate(225deg) translate(10em) rotate(-225deg);
+}
+
+.pids-wrapper > *:nth-of-type(7) {
+    transform: rotate(270deg) translate(10em) rotate(-270deg);
+}
+
+.pids-wrapper > *:nth-of-type(8) {
+    transform: rotate(315deg) translate(10em) rotate(-315deg);
+
+}
